@@ -305,49 +305,6 @@ input[type="password"] {
     align-items: center;
 }
 
-/*responsive*/
- @media (max-width: 768px) {
-    .comunidad,
-    .serparte,
-    .contactoform,
-    .inicioform,
-    .detalletest {
-      width: 90%;
-      margin: 10px;
-    }
-  
-    .navbar {
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 10px;
-    }
-  
-    .productos,
-    .looks,
-    .looksdetalle,
-    .testimonios,
-    .principal {
-      flex-direction: column;
-    }
-  
-    .productos img,
-    .looksdetalle img {
-      width: 100%;
-      max-width: 250px;
-      height: auto;
-    }
-  
-    h1, h2, .ptitulo {
-      font-size: 1.5rem;
-    }
-  
-    .navbar ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 5px;
-    }
-  }
-/*responsive*/
 .btn-primary{
     background-color: #E14591;
     color: black;
@@ -356,6 +313,11 @@ input[type="password"] {
 .btn-primary:hover {
     background-color: #ff1493;
 }
+.estilobtn2:active {
+    background-color: #ff1493;
+    color: white;
+    border-color: #ff1493;
+  }
 .estilobtn{
     font-size: 10px;
     color: black;
@@ -369,3 +331,160 @@ input[type="password"] {
 .estilobtn2:hover{
     background-color: #E14591;
 }
+
+.edicioncarousel {
+    width: 500px;
+    margin: 40px auto;
+    border: 4px solid black;
+    border-radius: 20px;
+  }
+  
+.edicionimg {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+
+.ediciontextos {
+    border-radius: 10px;
+    padding: 10px;
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+.ediciontitulo {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+.ediciontexto {
+    color: black;
+    font-size: 12px;
+  }
+
+/*responsive*/
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .comunidad,
+    .serparte,
+    .contactoform,
+    .inicioform,
+    .detalletest {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .principal,
+    .productos,
+    .looks,
+    .looksdetalle,
+    .testimonios {
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+    }
+  
+    .productos img,
+    .looksdetalle img {
+      width: 100%;
+      height: auto;
+    }
+  
+    h1,
+    .ptitulo,
+    h2,
+    .preg-titulo {
+      font-size: 1.2rem;
+    }
+  
+    .navbar ul li a {
+      font-size: 0.75rem;
+    }
+  
+    section ul li,
+    section ol li {
+      font-size: 0.85rem;
+    }
+  
+    .tip {
+      font-size: 0.75rem;
+    }
+  
+    .tarjetalink,
+    .footera {
+      font-size: 0.75rem;
+    }
+  
+    .pquienes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pquienes img {
+      max-width: 90%;
+    }
+  
+    .btn-primary,
+    .estilobtn,
+    .estilobtn2 {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  
+    .edicioncarousel {
+      width: 90%;
+      padding: 10px;
+      margin: 20px auto;
+    }
+  
+    .edicionimg {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ediciontextos {
+      padding: 5px;
+    }
+  
+    .ediciontitulo {
+      font-size: 1rem;
+    }
+  
+    .ediciontexto {
+      font-size: 0.85rem;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      margin: 10px auto;
+    }
+  
+    footer {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  
+    .copyright {
+      font-size: 0.65rem;
+    }
+  }
+
+/*responsive*/
