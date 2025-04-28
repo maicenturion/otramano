@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">   
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="../assets/img/logonegrosimple.jpg" type="image/x-icon">
     <title>otra mano | inicio</title>
 </head>
 <body>
@@ -12,23 +13,23 @@
         <nav class="navbar navbar-expand-lg barrnav">
             <div class="container-fluid">
                 <a href="index.html" class="logonav">
-                <img src="./assets/img/logo.jpg" alt="Logo que redirecciona a home"></a>
+                <img src="./assets/img/logonegrosimple.jpg" alt="Logo que redirecciona a home"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a  href="./pages/nuestrahistoria.html" class="nav-link active" href="#">🍒 nuestra historia</a>
+                    <a  href="./pages/nuestrahistoria.html" class="nav-link active" href="#">nuestra historia</a>
                     </li>
                     <li class="nav-item">
-                    <a href="./pages/testimonios.html" class="nav-link active" href="#">🍄 testimonios de usuarias</a>
+                    <a href="./pages/testimonios.html" class="nav-link active" href="#">testimonios de usuarias</a>
                     </li>
                     <li class="nav-item">
-                    <a href="./pages/contacto.html" class="nav-link active" href="#">🍓 contactanos</a>
+                    <a href="./pages/contacto.html" class="nav-link active" href="#">contactanos</a>
                     </li>
                     <li class="nav-item">
-                    <a href="./pages/iniciosesion.html" class="nav-link active" href="#">🎀 entrá/registrate</a>
+                    <a href="./pages/iniciosesion.html" class="nav-link active" href="#">entrá/registrate</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -40,7 +41,11 @@
         <h1>otra mano</h1>
         <p class="ptitulo">dale otra oportunidad a tu ropa</p>
     </header>
+    <div class="localdiv">
+        <img class="local" src="./assets/img/local.jpg" alt="imagen de un perchero con muchas prendas">
+      </div>
     <main>
+        <h2>razones por las cuales tenes que ser parte de este cambio</h2>
         <section class="principal">
             <div class="comunidad">
             <p>¿por qué ser parte de nuestra comunidad?</p>
@@ -66,56 +71,60 @@
             <h2>nuestros productos</h2>
             <div class="productos">
                 <div class="tarjetaprod">
-                    <img src="./assets/img/buzo.jpg" class="tarjetaimg" alt="buzo con estrelas marron">
-                    <div class="tarjetacuerpo">
-                        <h5>buzo enjoy</h5>
-                        <p>$12.000</p>
-                        <p>vendido por:</p>
-                        <p><a href="#" class="tarjetalink">pamela arias</a></p>
-                        <a href="#" class="btn btn-primary">agregar al carrito</a>
+                    <div class="card">
+                        <img src="./assets/img/buzo.jpg" class="tarjetaimg" alt="buzo con estrelas marron">
+                        <div class="card-body">
+                            <h5 class="tarjetacuerpo">buzo enjoy</h5>
+                            <p>$12.000
+                            <p>vendido por: <span class="tarjetalink">pamela arias</span></p>
+                            <a href="#" class="btn btn-primary">agregar al carrito</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="tarjetaprod">
-                    <img src="./assets/img/remera.jpg" class="tarjetaimg" alt="remera estilo basket blanca y negra con numero 89 en el centro">
-                    <div class="tarjetacuerpo">
-                        <h5>remera tipo basket</h5>
-                        <p>$7.500</p>
-                        <p>vendido por:</p>
-                        <p><a href="#" class="tarjetalink">julieta galvez</a></p>
-                        <a href="#" class="btn btn-primary">agregar al carrito</a>
+                </div>
+                <div class="tarjetaprod">
+                    <div class="card">
+                        <img src="./assets/img/remera.jpg" class="tarjetaimg" alt="remera estilo basket blanca y negra con numero 89 en el centro">
+                        <div class="card-body">
+                            <h5 class="tarjetacuerpo">remera tipo basket</h5>
+                            <p>$7.500
+                            <p>vendido por: <span class="tarjetalink">julieta galvez</span></p>
+                            <a href="#" class="btn btn-primary">agregar al carrito</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="tarjetaprod">
-                    <img src="./assets/img/sweater.jpg" class="tarjetaimg" alt="sweater tejido negro con nubes blancas">
-                    <div class="tarjetacuerpo">
-                        <h5>sweater nubes</h5>
-                        <p>$9.500</p>
-                        <p>vendido por:</p>
-                        <p><a href="#" class="tarjetalink">mariana querales</a></p>
-                        <a href="#" class="btn btn-primary">agregar al carrito</a>
+                </div>
+                <div class="tarjetaprod">
+                    <div class="card">
+                        <img src="./assets/img/sweater.jpg" class="tarjetaimg" alt="sweater tejido negro con nubes blancas">
+                        <div class="card-body">
+                            <h5 class="tarjetacuerpo">sweater nubes</h5>
+                            <p>$9.500
+                            <p>vendido por: <span class="tarjetalink">mariana querales</span></p>
+                            <a href="#" class="btn btn-primary">agregar al carrito</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="tarjetaprod">
-                    <img src="./assets/img/sweaterremera.jpg" class="tarjetaimg" alt="remera estilo sweter con cuello tipo bote color crema">
-                    <div class="tarjetacuerpo">
-                        <h5>sweater hilo</h5>
-                        <p>$6.500</p>
-                        <p>vendido por:</p>
-                        <p><a href="#" class="tarjetalink">nerea rodriguez</a></p>
-                        <a href="#" class="btn btn-primary">agregar al carrito</a>
+                </div>
+                <div class="tarjetaprod">
+                    <div class="card">
+                        <img src="./assets/img/sweaterremera.jpg" class="tarjetaimg" alt="remera estilo sweter con cuello tipo bote color cremas">
+                        <div class="card-body">
+                            <h5 class="tarjetacuerpo">sweater hilo</h5>
+                            <p>$6.500
+                            <p>vendido por: <span class="tarjetalink">nerea rodriguez</span></p>
+                            <a href="#" class="btn btn-primary">agregar al carrito</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="tarjetaprod">
-                    <img src="./assets/img/vestido.jpg" class="tarjetaimg" alt="vestido negro con tiritas para atar">
-                    <div class="tarjetacuerpo">
-                        <h5>vestido</h5>
-                        <p>$12.500</p>
-                        <p>vendido por:</p>
-                        <p><a href="#" class="tarjetalink">tatiana fernandez</a></p>
-                        <a href="#" class="btn btn-primary">agregar al carrito</a>
+                </div>
+                <div class="tarjetaprod">
+                    <div class="card">
+                        <img src="./assets/img/vestido.jpg" class="tarjetaimg" alt="vestido negro con tiritas para atar">
+                        <div class="card-body">
+                            <h5 class="tarjetacuerpo">vestido</h5>
+                            <p>$12.500
+                            <p>vendido por: <span class="tarjetalink">tatiana fernandez</span></p>
+                            <a href="#" class="btn btn-primary">agregar al carrito</a>
+                        </div>
                     </div>
-                  </div>
-
+                </div>
             </div>
         </section> 
         <h2>cuál es tu estilo?</h2>
@@ -142,6 +151,20 @@
             </div>
         </section>
     </main>
+    <section class="section-newsletter-home position-relative" data-store="home-newsletter">
+        <div class="container-fluidnewsletter">
+            <div class="row justify-content-md-center">
+                <div class="col-md-12 text-center">
+                    <div class="js-newsletter newsletter">
+                        <h2>newsletter</h2>
+                            <p class="mb-4">no te pierdas todas las novedades! ¡Registrate ya mismo y comenza a disfrutarlas!</p>
+                            <input type="email" id="email" class="form-control  " autocorrect="off" autocapitalize="off" name="email" placeholder="Email" aria-label="Email">
+                    </div>
+                            <input type="submit" name="contact" class="btn btn-primary" value="Enviar">
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-container">
             <p class="footer-msj">✮⋆˙ otra mano | dale otra oportunidad a tu ropa ✮⋆˙</p>
