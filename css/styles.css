@@ -1,67 +1,124 @@
+@charset "UTF-8";
+header nav, .looks .looksdetalle, .localdiv, main .productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pquienes, main .contenedorlogin {
+  display: flex;
+  justify-content: center;
+}
+
+.pquienes .textos, main .card, main .contenedorlogin .contactoform form, main .contenedorlogin .cuadroexpl .columnaimgs {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   background-color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 100%;
+  font-family: "Balsamiq Sans", cursive;
   overflow-x: hidden;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5%;
-}
-header nav div img {
-  height: 60px;
-}
-header nav div li {
-  text-decoration: underline;
-  font-size: 0.65rem;
-  font-weight: bold;
-}
-header nav div li a.nav-link:hover {
-  color: #4C2818 !important;
-}
-header nav form input.form-control {
-  font-size: 0.65rem !important;
-}
-header nav form .estilobtn2 {
-  font-size: 0.65rem;
-  background-color: grey;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-header nav form .estilobtn2:hover {
-  background-color: #4C2818;
-  color: white;
-}
-header h1 {
-  text-decoration: underline;
-  font-size: 1, 5rem;
-  text-align: center;
-}
-header p {
-  background-color: rgb(212, 209, 209);
-  text-decoration: underline;
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: bold;
-}
-
-.local {
-  width: 100%;
-  height: 10%;
-}
-
 main h2 {
-  background-color: #4C2818;
-  color: white;
+  background-color: pink;
   text-align: center;
-  text-decoration: underline;
-  font-size: 1.5rem;
   margin-top: 20px;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+main .contenedorlogin {
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+main .contenedorlogin .cuadroexpl {
+  display: flex;
+  max-width: 700px;
+  margin-top: 35px;
+}
+main .contenedorlogin .cuadroexpl .img1 {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+main .contenedorlogin .cuadroexpl .columnaimgs {
+  justify-content: space-between;
+  gap: 15px;
+}
+main .contenedorlogin .cuadroexpl .columnaimgs img {
+  height: 190px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+main .contenedorlogin .contactoform {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 25px;
+  background-color: white;
+}
+main .contenedorlogin .contactoform h2 {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+main .contenedorlogin .contactoform form {
+  gap: 12px;
+}
+main .contenedorlogin .contactoform form input[type=text],
+main .contenedorlogin .contactoform form input[type=password] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(236, 234, 234);
+  font-size: 1rem;
+  width: 100%;
+}
+main .contenedorlogin .contactoform form .boton {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  background-color: rgb(236, 234, 234);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+main .contenedorlogin .contactoform form .boton:hover:hover {
+  background-color: pink;
+  color: white;
+}
+main .estilos {
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+main .estilos h3 {
+  text-decoration: underline;
+  font-size: 18px;
+}
+main .estilos .descripcion {
+  color: pink;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
 }
 main .principal {
   display: flex;
@@ -73,121 +130,195 @@ main .principal {
   flex-wrap: wrap;
 }
 main .comunidad {
-  border: 2px solid grey;
+  border: 2px solid rgb(236, 234, 234);
   border-radius: 15px;
   padding: 20px;
-  width: 30%;
+  width: 40%;
 }
 main .comunidad p {
   text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 main .comunidad ul li {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   list-style: none;
   text-align: left;
 }
 main .serparte {
-  border: 2px solid grey;
+  border: 2px solid rgb(236, 234, 234);
   border-radius: 15px;
   padding: 20px;
-  width: 30%;
+  width: 40%;
 }
 main .serparte p {
   text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 main .serparte ol li {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-align: left;
 }
 main .serparte ol li .tip {
-  font-style: italic !important;
-  color: #888 !important;
-  font-size: 0.75rem !important;
+  color: #888;
+  font-size: 1rem;
+  text-decoration: italic;
 }
 main .productos {
-  display: flex;
-  gap: 100px;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   margin-top: 25px;
+  width: 80%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 main .productos img {
-  width: 200px;
   height: 200px;
-  object-fit: cover;
+  width: 200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
-main .productos h5 {
+main .productos img:hover {
+  transform: scale(1.05);
+}
+main .card {
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+main h5 {
   color: black;
-  font-weight: bold;
+  font-size: 1.5rem;
   text-decoration: underline;
+  font-weight: bold;
   text-align: center;
-  font-size: 1.2rem;
   margin-bottom: 5px;
 }
-main .productos p {
+main p {
   color: black;
+  font-size: 1.1rem;
+  text-decoration: none;
   text-align: center;
-  font-size: 0.85rem;
   margin-top: 0px;
 }
-main .productos .btn-primary {
+main .btn-primary {
   background-color: white;
   color: black;
   border-color: black;
 }
-main .productos .btn-primary:hover {
-  background-color: grey;
+main .btn-primary:hover:hover {
+  background-color: pink;
+  color: white;
 }
-main .looks {
-  display: flex;
+main .preguntasfrecuentes {
+  justify-content: left;
+  align-items: left;
+  margin-top: 15px;
+}
+main .preguntasfrecuentes .preg-titulo {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-align: left;
+  margin-top: 20px;
+}
+main .preguntasfrecuentes .preg {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+main .preguntasfrecuentes .rta {
+  text-align: left;
+  font-size: 0.85rem;
+}
+main .preguntasfrecuentes .explic {
+  color: pink;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.localdiv {
+  margin-top: 15px;
+}
+.localdiv img {
+  height: 10%;
+  width: 65%;
+  border-radius: 20px;
+}
+
+.looks {
   gap: 50px;
   align-items: center;
   justify-content: center;
-  text-align: center;
   margin-top: 15px;
 }
-main .looks .looksdetalle {
-  display: flex;
+.looks h3 {
+  font-size: 15px;
+  text-align: center;
+}
+.looks .looksdetalle {
   gap: 100px;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   margin-top: 15px;
 }
-main .looks .looksdetalle img {
-  height: 250px;
-  width: 150px;
+.looks .looksdetalle img {
+  height: 450px;
+  width: 250px;
+  max-width: 100%;
   border-radius: 20px;
   padding: 5px;
-  max-width: 100%;
+  object-fit: cover;
 }
-main .looks .looksdetalle img:hover {
+.looks .looksdetalle img:hover {
   transform: scale(1.05);
 }
-main .looks .looksdetalle .tarjetalink {
+.looks .looksdetalle .tarjetalink {
   text-decoration: underline;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   color: black;
 }
-main .pquienes {
-  display: flex;
+
+.pquienes {
+  flex-wrap: wrap;
   align-items: flex-start;
-  gap: 20px;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  min-height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
 }
-main .pquienes img {
+.pquienes img {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px black;
   flex-shrink: 0;
-  margin-top: 20px;
+  margin-top: 25px;
 }
-main .pquienes p {
-  margin-top: 20px;
-  font-size: 1rem;
+.pquienes img:hover {
+  transform: scale(1.05);
+}
+.pquienes .textos {
+  max-width: 900px;
+  flex: 1;
+  gap: 1.5rem;
+  overflow: visible;
+}
+.pquienes .parrafo1,
+.pquienes .parrafo2 {
+  color: black;
+  font-size: 1.1rem;
+  text-decoration: none;
+  gap: 5.5rem;
+  line-height: 1.7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 0 15px 500px gray;
+  border-radius: 20px;
+}
+.pquienes .parrafo2 {
+  font-weight: 500;
 }
 
 .btn-primary {
@@ -196,8 +327,9 @@ main .pquienes p {
   border-color: black;
   margin-top: 10px;
 }
-.btn-primary:hover {
-  background-color: grey;
+.btn-primary:hover:hover {
+  background-color: pink;
+  color: white;
 }
 
 .email-input {
@@ -206,6 +338,229 @@ main .pquienes p {
   margin: 0 auto;
   border-color: black;
   border-radius: 10px;
+}
+
+.edicioncarousel {
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.edicioncarousel .carousel-control-prev-icon,
+.edicioncarousel .carousel-control-next-icon {
+  background-color: black;
+  background-image: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.edicioncarousel .carousel-control-prev,
+.edicioncarousel .carousel-control-next {
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+}
+.edicioncarousel .carousel-control-prev {
+  left: 10px;
+}
+.edicioncarousel .carousel-control-next {
+  right: 10px;
+}
+
+.edicionimg {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+.ediciontextos {
+  border-radius: 10px;
+  padding: 10px;
+  position: static;
+  margin-top: 10px;
+  text-align: center;
+}
+.ediciontextos .ediciontitulo {
+  color: black;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.ediciontextos .ediciontexto {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.contactoform {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  width: 30%;
+}
+.contactoform input[type=text],
+.contactoform input[type=email],
+.contactoform input[type=password],
+.contactoform textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  display: block;
+  margin-top: 15px;
+}
+.contactoform .boton {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: rgb(236, 234, 234);
+  border: 2px solid rgb(236, 234, 234);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .contactoform body {
+    overflow-x: hidden;
+  }
+  .contactoform main .principal {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    width: 100%;
+  }
+  .contactoform main .principal .comunidad,
+  .contactoform main .principal .serparte {
+    width: 90% !important;
+    margin-bottom: 10px;
+  }
+  .contactoform main .contenedorlogin {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+  .contactoform main .contenedorlogin .cuadroexpl {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .contactoform main .contenedorlogin .cuadroexpl .img1 {
+    height: 100%;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .contactoform main .contenedorlogin .cuadroexpl .columnaimgs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contactoform main .contenedorlogin .cuadroexpl .columnaimgs img {
+    height: 45%;
+    width: 45%;
+  }
+  .contactoform main .contenedorlogin .contactoform {
+    width: 100%;
+  }
+  .contactoform main .productos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 0;
+  }
+  .contactoform main .productos img {
+    height: 50%;
+    width: 50%;
+  }
+  .contactoform main .localdiv img {
+    height: 90%;
+    width: 90%;
+  }
+  .contactoform main .looks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contactoform main .looks .looksdetalle {
+    gap: 40px;
+  }
+  .contactoform main .looks .looksdetalle img {
+    height: 100%;
+    width: 100%;
+  }
+  .contactoform main .pquienes {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactoform main .pquienes img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+  }
+  .contactoform main .pquienes .textos {
+    width: 100%;
+    padding: 0;
+  }
+  .contactoform main .pquienes .parrafo1,
+  .contactoform main .pquienes .parrafo2 {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .contactoform main .email-input {
+    width: 90%;
+  }
+  .contactoform main .edicioncarousel {
+    width: 100%;
+  }
+  .contactoform main .edicionimg {
+    height: 100%;
+    width: 100%;
+  }
+  .contactoform main .contactoform {
+    width: 100%;
+  }
+  .contactoform main .contactoform input[type=text],
+  .contactoform main .contactoform input[type=email],
+  .contactoform main .contactoform input[type=password],
+  .contactoform main .contactoform textarea {
+    width: 100%;
+  }
+}
+.contactoform .carousel-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactoform .tarjetaprod {
+  width: 50%; /* Ajusta el tamaño de las tarjetas */
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+header nav, main .productos, .localdiv, .looks .looksdetalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .contenedorlogin, .pquienes {
+  display: flex;
+  justify-content: center;
+}
+
+main .contenedorlogin .cuadroexpl .columnaimgs, main .contenedorlogin .contactoform form, main .card, .pquienes .textos {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -223,7 +578,7 @@ footer a {
   transition: color 0.3s ease;
 }
 footer a:hover {
-  color: #4C2818;
+  color: pink;
 }
 footer .footer-container {
   margin: auto;
@@ -233,6 +588,171 @@ footer .copyright {
   font-size: 0.75rem;
   margin-top: 5px;
   opacity: 0.7;
+}
+@media (max-width: 390px) {
+  footer {
+    padding: 20px 10px;
+  }
+  footer a {
+    font-size: 0.75rem;
+  }
+  footer .footer-container p,
+  footer .footer-container .footera {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  footer .copyright {
+    font-size: 0.85rem;
+  }
+}
+
+header nav div img {
+  height: 100px;
+}
+header nav div li {
+  color: black;
+  font-size: 1rem;
+  text-decoration: underline;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header nav div li a.nav-link:hover:hover {
+  background-color: none;
+  color: pink;
+}
+header nav div li img.login {
+  height: 20px;
+  width: auto;
+}
+header nav form input.form-control {
+  font-size: 1rem !important;
+}
+header nav form .estilobtn2 {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: rgb(236, 234, 234);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+header nav form .estilobtn2:hover:hover {
+  background-color: pink;
+  color: white;
+}
+header h1 {
+  text-align: center;
+  color: colortxbs;
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+header p {
+  background-color: rgb(236, 234, 234);
+  text-align: center;
+  color: colortxbs;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+header .contenedor {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+header .texto-animado {
+  position: absolute;
+  white-space: nowrap;
+  animation: moverTexto 20s linear infinite;
+  color: white;
+  font-size: 20px;
+  text-decoration: underline;
+  background-color: pink;
+}
+@keyframes moverTexto {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+header .anuncio {
+  color: white;
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  header header nav div img {
+    height: 80px;
+  }
+  header header nav div li {
+    color: black;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  header header nav div li a.nav-link:hover:hover {
+    background-color: none;
+    color: pink;
+  }
+  header header nav div li img.login {
+    height: 16px;
+    width: auto;
+  }
+  header header nav form input.form-control {
+    font-size: 0.9rem !important;
+  }
+  header header nav form .estilobtn2 {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    background-color: rgb(236, 234, 234);
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+  header header nav form .estilobtn2:hover:hover {
+    background-color: pink;
+    color: white;
+  }
+  header header h1 {
+    text-align: center;
+    color: colortxbs;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+  header header p {
+    background-color: rgb(236, 234, 234);
+    text-align: center;
+    color: colortxbs;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  header header .contenedor {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 25px;
+  }
+  header header .texto-animado {
+    position: absolute;
+    white-space: nowrap;
+    animation: moverTexto 20s linear infinite;
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    background-color: pink;
+  }
+  header header .anuncio {
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

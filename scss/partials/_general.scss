@@ -1,0 +1,553 @@
+@import "./variables";
+@import "./mixinsextend";
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: $colorfondo;
+  font-family: 'Balsamiq Sans', cursive;
+  overflow-x: hidden;
+}
+
+main{
+    h2{
+        background-color: $colorfondoh2;
+        text-align: center;
+        margin-top: 20px;
+        @include textosvs($colorfondo, 1.5rem, underline);
+        }
+        .contenedorlogin {
+            @extend %flexm;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 40px;
+            flex-wrap: wrap;
+          
+            .cuadroexpl {
+              display: flex;
+              max-width: 700px;
+              margin-top: 35px;
+          
+              .img1 {
+                @include medidas(400px, 300px);
+                object-fit: cover;
+                border-radius: 10px;
+                margin-right: 15px;
+              }
+          
+              .columnaimgs {
+                @extend %colum;
+                justify-content: space-between;
+                gap: 15px;
+          
+                img {
+                    @include medidas(190px, 200px);
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+              }
+            }
+            .contactoform {
+              width: 100%;
+              border: 2px solid $colortxbs;
+              border-radius: 15px;
+              padding: 25px;
+              background-color: $colorfondo;
+          
+              h2 {
+                @include  textosvs($colorfondo, 1.5rem, none);
+                margin-bottom: 20px;
+              }
+          
+              form {
+                @extend %colum;
+                gap: 12px;
+          
+                input[type="text"],
+                input[type="password"] {
+                  padding: 10px;
+                  border-radius: 5px;
+                  border: 1px solid $colorbordes;
+                  font-size: 1rem;
+                  width: 100%;
+                }
+                .boton {
+                @include textosvs($colorfondo, 1rem,none);
+                  margin-top: 10px;
+                  background-color: $colorptitulo;
+                  border: none;
+                  border-radius: 10px;
+                  padding: 10px;
+                  text-decoration: none;
+                  text-align: center;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+          
+                  &:hover {
+                    @include hvcolor ($colorfondoh2, $colorfondo);
+                  }
+                }
+              }
+            }
+          }
+    .estilos{
+        gap: 2rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+        margin-top: 20px;
+        flex-wrap: wrap;
+
+            h3{
+                text-decoration: underline;
+                font-size: 18px;
+            }
+
+            .descripcion{
+                @include textosvs($colorfondoh2, 14px, none);
+                font-weight: bold;
+                text-align: left;
+            }
+    }
+    .principal{
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        }
+        .comunidad{
+            border: 2px solid $colorbordes;
+            border-radius: 15px;
+            padding: 20px;
+            width: 40%;
+                p{
+                    text-decoration: underline;
+                    font-size: 1.4rem;
+                    }
+                ul li{
+                    font-size: 1.2rem;
+                    list-style: none;
+                    text-align: left;
+                    }
+                }
+        .serparte{
+            border: 2px solid $colorbordes;
+            border-radius: 15px;
+            padding: 20px;
+            width: 40%;
+                p{
+                    text-decoration: underline;
+                    font-size: 1.4rem;
+                    }
+                ol li{
+                    font-size: 1.2rem;
+                    text-align: left;
+                        .tip{
+                            @include textosvs(#888, 1rem,italic);
+                            }
+                    }
+            }
+            .productos {
+                @extend %flexd;
+                text-align: center;
+                margin-top: 25px;
+                width: 80%;
+                padding-left: 0px;
+                padding-right: 0px;
+              
+                img {
+                    @include medidas(200px, 200px);
+                    border-radius: 20px;
+                    transition: transform 0.3s ease;
+              
+                  &:hover {
+                    transform: scale(1.05);
+                  }
+                }
+              }
+            .card{
+                @extend %colum;
+                align-items: center;
+                padding: 10px;
+                margin: 20px;
+            }
+            h5{
+                @include textosvs($colortxbs, 1.5rem, underline);
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 5px;
+                    }
+            p{
+                @include textosvs($colortxbs, 1.1rem, none);
+                text-align: center;
+                margin-top: 0px;
+                    }
+            .btn-primary{
+                background-color: $colorfondo;
+                color: $colortxbs;
+                border-color: $colortxbs;
+                    &:hover{
+                        @include hvcolor($colorfondoh2, $colorfondo);
+                        }
+                    }
+            
+            .preguntasfrecuentes{
+                justify-content: left;
+                align-items: left;
+                margin-top: 15px;
+                    .preg-titulo {
+                        @include textosvs ($colortxbs, 1.5rem, underline);
+                            text-align: left;
+                            margin-top: 20px;
+                            }
+                    .preg{
+                    text-align: left;
+                    font-weight: bold;  
+                    font-size: 1rem;
+                    margin-top: 10px;
+                    }
+                    .rta{
+                        text-align: left;
+                        font-size: 0.85rem;
+                }
+                    .explic{
+                        @include textosvs($colorfondoh2, 1.1rem, underline);
+                        font-weight: bold;
+                    }
+            }
+            }
+            .localdiv{
+                @extend %flexd;
+                margin-top: 15px;
+                    img{
+                        @include medidas(10%, 65%);
+                        border-radius: 20px;
+                        }
+                }
+    
+    .looks{ 
+        gap: 50px;
+        align-items: center;
+        justify-content: center; 
+        margin-top: 15px;
+            h3{
+                font-size: 15px;
+                text-align: center
+            }
+            .looksdetalle{
+                @extend %flexd;
+                gap: 100px;
+                text-align: center; 
+                margin-top: 15px;
+                    img{
+                        @include medidas(450px, 250px);
+                        max-width: 100%;
+                        border-radius: 20px;
+                        padding: 5px;
+                        object-fit: cover;
+                            &:hover{
+                                transform: scale(1.05);
+                                }
+                            }
+                            .tarjetalink{
+                                text-decoration: underline;
+                                font-size: 1.5rem;
+                                color: $colortxbs;
+                            }
+                    }
+            }
+    .pquienes {
+        @extend %flexm;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 3rem 2rem;
+        max-width: 1200px;
+        min-height: 100px;
+        overflow: hidden;
+        margin: 0 auto;    
+        img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px $colortxbs;
+            flex-shrink: 0;
+            margin-top: 25px;
+            &:hover{
+                transform: scale(1.05);
+                }  
+                }
+        .textos {
+            max-width: 900px;
+            flex: 1;
+            @extend %colum;
+            gap: 1.5rem;
+              overflow: visible;
+                }
+                .parrafo1,
+                .parrafo2 {
+                    @include textosvs($colortxbs, 1.1rem, none);
+                gap: 5.5rem;
+                line-height: 1.7;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                box-shadow: 0 15px 500px gray;   
+                border-radius: 20px;      
+                }
+                .parrafo2 {
+                  font-weight: 500;
+                }
+              }
+
+    .btn-primary{
+            background-color: $colorfondo;
+            color: $colortxbs;
+            border-color: $colortxbs;
+            margin-top: 10px;
+            &:hover{
+                @include hvcolor($colorfondoh2, $colorfondo);
+            }
+
+        }
+    .email-input {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            border-color: $colortxbs;
+            border-radius: 10px;
+          }
+.edicioncarousel {
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 20px;
+  position: relative; 
+  overflow: hidden;
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: $colortxbs; 
+    background-image: none;  
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+  }
+
+  .carousel-control-prev {
+    left: 10px;
+  }
+
+  .carousel-control-next {
+    right: 10px;
+  }
+}
+
+.edicionimg {
+  @include medidas(500px, 500px);
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+.ediciontextos {
+  border-radius: 10px;
+  padding: 10px;
+  position: static;
+  margin-top: 10px;
+  text-align: center;
+
+  .ediciontitulo {
+    @include textosvs($colortxbs, 20px, underline);
+    font-weight: bold;
+  }
+
+  .ediciontexto {
+    @include textosvs($colortxbs, 12px, none);
+  }
+
+    }
+    .contactoform{
+                border: 2px solid $colortxbs;
+                border-radius: 15px;
+                padding: 15px;
+                width: 30%;
+        
+                input[type="text"],
+                input[type="email"],
+                input[type="password"],
+                textarea {
+                    width: 90%;
+                    padding: 10px;
+                    margin: 15px;
+                    border-radius: 5px;
+                    border: 1px solid grey;
+                    display: block;
+                    margin-top: 15px;
+                        }
+
+            .boton {
+                @include textosvs($colorfondo, 1rem, none);
+                background-color: $colorbordes;
+                border: 2px solid $colorbordes;
+                border-radius: 10px;
+                padding: 10px 20px;
+                display: inline-block;
+                margin-top: 15px;
+                text-align: center;
+                cursor: pointer;
+        }
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+
+      .principal {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      width: 100%;
+
+      .comunidad,
+      .serparte {
+        width: 90% !important;
+        margin-bottom: 10px;
+      }
+    }
+
+    .contenedorlogin {
+      flex-direction: column;
+      padding: 20px;
+      gap: 30px;
+
+      .cuadroexpl {
+        flex-direction: column;
+        max-width: 100%;
+
+        .img1 {
+          @include medidas(100%, auto);
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+
+        .columnaimgs {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          img {
+            @include medidas(45%, 45%);
+          }
+        }
+      }
+
+      .contactoform {
+        width: 100%;
+      }
+    }
+
+    .productos {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding-left: 0;
+ 
+      img {
+        @include medidas(50%, 50%);
+      }
+    }
+
+    .localdiv {
+      img {
+        @include medidas(90%, 90%);
+      }
+    }
+
+    .looks {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .looksdetalle {
+        gap: 40px;
+
+        img {
+          @include medidas(100%, 100%);
+        }
+      }
+    }
+
+    .pquienes {
+      padding: 2rem 1rem;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .textos {
+        width: 100%;
+        padding: 0;
+      }
+
+      .parrafo1,
+      .parrafo2 {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+    }
+
+    .email-input {
+      width: 90%;
+    }
+
+    .edicioncarousel {
+      width: 100%;
+    }
+
+    .edicionimg {
+      @include medidas(100%, 100%);
+    }
+
+    .contactoform {
+      width: 100%;
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+}
+  .carousel-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjetaprod {
+    width: 50%; /* Ajusta el tamaño de las tarjetas */
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+      

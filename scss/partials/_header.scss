@@ -1,0 +1,153 @@
+header{    
+  nav{
+    @extend %flexd;
+      div{
+        img{
+        height: 100px;
+                    }
+                    li {
+                    @include textosvs($colortxbs, 1rem, underline);
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                        a.nav-link {
+                            &:hover {
+                                @include hvcolor(none, $colorfondoh2);
+                            }
+                          }
+                    img.login{
+                        @include medidas(20px, auto);
+                    }
+                        }
+                }
+                form {
+                    input.form-control {
+                      font-size: 1rem !important; 
+                    }
+                    .estilobtn2 {
+                        @include textosvs ($colorfondo, 1rem, none);
+                        background-color: $colorbordes;
+                        border: none;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                             &:hover{
+                                @include hvcolor($colorfondoh2, $colorfondo);
+                        }
+                        }
+                    }
+    }
+    h1{
+        text-align: center;
+        @include textosvs (colortxbs, 3.5rem, underline);
+    }
+    p{
+        background-color: $colorfooterfondo;
+        text-align: center;
+        @include textosvs (colortxbs, 1.5rem, underline);
+        font-weight: bold;
+    }
+    .contenedor {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 30px;
+    }
+
+    .texto-animado {
+      position: absolute;
+      white-space: nowrap;
+      animation: moverTexto 20s linear infinite;
+      @include textosvs ($colorfondo, 20px, underline);
+      background-color: $colorfondoh2;
+    }
+
+    @keyframes moverTexto {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: -100%;
+      }
+    }
+    .anuncio{
+        @include textosvs ($colorfondo, 20px, underline);
+        text-align: center;
+        font-weight: bold;
+    }
+@media (max-width: 768px) {
+  header {
+    nav {
+      div {
+        img {
+          height: 80px; // reducido para móviles
+        }
+
+        li {
+          @include textosvs($colortxbs, 0.9rem, underline);
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+          a.nav-link {
+            &:hover {
+              @include hvcolor(none, $colorfondoh2);
+            }
+          }
+
+          img.login {
+            @include medidas(16px, auto); // más chico para pantalla chica
+          }
+        }
+      }
+
+      form {
+        input.form-control {
+          font-size: 0.9rem !important; // ajustado
+        }
+
+        .estilobtn2 {
+          @include textosvs($colorfondo, 0.9rem, none);
+          background-color: $colorbordes;
+          border: none;
+          padding: 4px 8px; // más compacto
+          border-radius: 5px;
+
+          &:hover {
+            @include hvcolor($colorfondoh2, $colorfondo);
+          }
+        }
+      }
+    }
+
+    h1 {
+      text-align: center;
+      @include textosvs(colortxbs, 2rem, underline); // más chico
+    }
+
+    p {
+      background-color: $colorfooterfondo;
+      text-align: center;
+      @include textosvs(colortxbs, 1rem, underline); // más chico
+      font-weight: bold;
+    }
+
+    .contenedor {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 25px; // más bajo
+    }
+
+    .texto-animado {
+      position: absolute;
+      white-space: nowrap;
+      animation: moverTexto 20s linear infinite;
+      @include textosvs($colorfondo, 16px, underline); // más chico
+      background-color: $colorfondoh2;
+    }
+
+    .anuncio {
+      @include textosvs($colorfondo, 16px, underline);
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+}

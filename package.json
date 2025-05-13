@@ -15,5 +15,8 @@
     "url": "https://github.com/maicenturion/otramano/issues"
   },
   "homepage": "https://github.com/maicenturion/otramano#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

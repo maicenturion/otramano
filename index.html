@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="../assets/img/logonegrosimple.jpg" type="image/x-icon">
     <title>otra mano | inicio</title>
 </head>
 <body>
     <header>
+        <div class="contenedor">
+        <p class="texto-animado"> 3 cuotas sin interes | 15% off con transferencia | envíos a todo el país </p></div>
+                <div class="anuncio">💖💕🎀💌🧸🩰🎠🍓🧁 💖💕🎀💌🧸🩰🎠🍓🧁 💖💕🎀💌🧸🩰🎠🍓🧁 💖💕🎀💌🧸🩰🎠🍓🧁 💖💕🎀💌🧸🩰🎠🍓🧁 💖💕🎀💌🧸🩰🎠🍓🧁</div>
         <nav class="navbar navbar-expand-lg barrnav">
             <div class="container-fluid">
                 <a href="index.html" class="logonav">
@@ -29,9 +36,9 @@
                     <a href="./pages/contacto.html" class="nav-link active" href="#">contactanos</a>
                     </li>
                     <li class="nav-item">
-                    <a href="./pages/iniciosesion.html" class="nav-link active" href="#">entrá/registrate</a>
+                    <a href="./pages/iniciosesion.html" class="nav-link active" href="#"><img class="login" src="./assets/img/acceso.png" alt="login"></a>
                     </li>
-                </ul>
+                </ul> 
                 <form class="d-flex" role="search">
                   <input class="form-control me-2 estilobtn" type="search" placeholder="que estás buscando?" aria-label="buscar">
                   <button class="btn estilobtn2" type="submit">buscar!</button>
@@ -41,32 +48,7 @@
         <h1>otra mano</h1>
         <p class="ptitulo">dale otra oportunidad a tu ropa</p>
     </header>
-    <div class="localdiv">
-        <img class="local" src="./assets/img/local.jpg" alt="imagen de un perchero con muchas prendas">
-      </div>
     <main>
-        <h2>razones por las cuales tenes que ser parte de este cambio</h2>
-        <section class="principal">
-            <div class="comunidad">
-            <p>¿por qué ser parte de nuestra comunidad?</p>
-            <ul>
-                <li>🌱 vas a cuidar el planeta</li>
-                <li>🤝 vas a conectar con una comunidad con conciencia</li>
-                <li>💸 ahorrás y ganás</li>
-                <li>👗 estilo auténtico y único</li>
-            </ul>
-            </div>
-            <div class="serparte">
-            <p>¿querés ser parte?</p>
-            <ol>
-                <li>hace click en "entrá/registrate" <span class="tip">(pss: lo vas a encontrar arriba a la derecha, fácil y directo 😉)</span></li>
-                <li>tocá "registrarte"</li>
-                <li>completá tus datos</li>
-                <li>validá tus datos</li>
-                <li>comenzá a disfrutar!</li>
-            </ol>
-            </div>
-        </section>
         <section>
             <h2>nuestros productos</h2>
             <div class="productos">
@@ -126,30 +108,59 @@
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
+
+
+        <h2>razones por las cuales tenes que ser parte de este cambio</h2>
+        <section class="principal">
+            <div class="comunidad" data-aos="fade-up-right">
+            <p>¿por qué ser parte de nuestra comunidad?</p>
+            <ul>
+                <li>🌱 vas a cuidar el planeta</li>
+                <li>🤝 vas a conectar con una comunidad con conciencia</li>
+                <li>💸 ahorrás y ganás</li>
+                <li>👗 estilo auténtico y único</li>
+            </ul>
+            </div>
+            <div class="serparte" data-aos="fade-up-left">
+            <p>¿querés ser parte?</p>
+            <ol>
+                <li>hace click en "entrá/registrate" <span class="tip">(pss: lo vas a encontrar arriba a la derecha, fácil y directo 😉)</span></li>
+                <li>tocá "registrarte"</li>
+                <li>completá tus datos</li>
+                <li>validá tus datos</li>
+                <li>comenzá a disfrutar!</li>
+            </ol>
+            </div>
+        </section>
+        <div class="localdiv">
+            <img class="local" src="./assets/img/local.jpg" alt="imagen de un perchero con muchas prendas">
+        </div>
         <h2>cuál es tu estilo?</h2>
         <section class="looks">
+            <h3>¡hace click sobre cada uno de los estilos para descubrir con cual te identificas!</h3>
             <div class="looksdetalle">
                 <div><img src="./assets/img/look1.jpg" alt="estiloa">
-                <p><a href="#" class="tarjetalink">casual</a></p>
+                <p><a href="./pages/estilos.html" class="tarjetalink">casual</a></p>
                 </div>
                 <div><img src="./assets/img/look2.jpg" alt="estilob">
-                <p><a href="#" class="tarjetalink">minimalista</a></p>
+                <p><a href="./pages/estilos.html" class="tarjetalink">minimalista</a></p>
                 </div>
                 <div><img src="./assets/img/look3.jpg" alt="estiloc">
-                <p><a href="#" class="tarjetalink">streetwear</a></p>
+                <p><a href="./pages/estilos.html" class="tarjetalink">streetwear</a></p>
                 </div>
                 <div><img src="./assets/img/look4.jpg" alt="estilod">
-                <p><a href="#" class="tarjetalink">romantico</a></p>
+                <p><a href="./pages/estilos.html" class="tarjetalink">romantico</a></p>
                 </div>
                 <div><img src="./assets/img/look5.jpg" alt="estiloe">
-                <p><a href="#" class="tarjetalink">urbana</a></p>
+                <p><a href="./pages/estilos.html" class="tarjetalink">urbana</a></p>
                 </div>
                 <div><img src="./assets/img/look6.jpg" alt="estilof">
-                <p><a href="#" class="tarjetalink">bohemio</a></p>
+                <p><a href="./pages/estilos.html" class="tarjetalink">bohemio</a></p>
                 </div>
             </div>
         </section>
+        <h2>_</h2>
     </main>
     <section class="section-newsletter-home position-relative" data-store="home-newsletter">
         <div class="container-fluidnewsletter">
@@ -160,7 +171,7 @@
                             <p class="mb-4">no te pierdas todas las novedades! ¡Registrate ya mismo y comenza a disfrutarlas!</p>
                             <input type="email" id="email" class="email-input" autocorrect="off" autocapitalize="off" name="email" placeholder="Email" aria-label="Email">
                     </div>
-                            <input type="submit" name="contact" class="btn btn-primary" value="Enviar">
+                        <input type="submit" name="contact" class="btn btn-primary" value="Enviar">
                 </div>
             </div>
         </div>
@@ -173,5 +184,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

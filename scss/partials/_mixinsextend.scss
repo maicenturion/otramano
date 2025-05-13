@@ -1,0 +1,30 @@
+//extends
+%flexd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+%flexm{
+    display: flex;
+    justify-content: center;
+}
+%colum{
+    display: flex;
+    flex-direction: column;
+}
+//mixin 
+@mixin textosvs ($colors, $tamanio, $deco){
+    color:$colors;
+    font-size: $tamanio;
+    text-decoration: $deco;
+}
+@mixin medidas($alto, $ancho){
+    height: $alto;
+    width: $ancho ;
+}
+@mixin hvcolor($bg-hover, $color-hover){
+      &:hover {
+    background-color: $bg-hover;
+    color: $color-hover;
+  }
+}
