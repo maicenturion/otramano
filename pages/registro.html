@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="carga de datos para registro de sesión en nuestra comunidad">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="../css/styles.css">
-    <title>otra mano | nuestra historia</title>
+    <title>otra mano | registrate</title>
     <link rel="shortcut icon" href="../assets/img/logonegrosimple.jpg" type="image/x-icon">
 </head>
 <body>
@@ -26,6 +27,9 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                    <a  href="productos.html" class="nav-link active" href="#">productos</a>
+                    </li>
+                    <li class="nav-item">
                     <a  href="nuestrahistoria.html" class="nav-link active" href="#">nuestra historia</a>
                     </li>
                     <li class="nav-item">
@@ -40,7 +44,7 @@
                     </ul> 
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2 estilobtn" type="search" placeholder="que estás buscando?" aria-label="buscar">
+                  <input class="form-control me-2 estilobtn" type="search" placeholder="que buscas?" aria-label="buscar">
                   <button class="btn estilobtn2" type="submit">buscar!</button>
                 </form>
             </div>
@@ -49,37 +53,33 @@
         <p class="ptitulo">dale otra oportunidad a tu ropa</p>
     </header>
     <main>
-        <section class="contactoform">
-            <h2>hey! inicia sesión!</h2>
-            <form action="">
-                <div>
-                    <label for="nombre">nombre:</label>
-                    <input type="text" id="nombre">
-                </div>
-                <div>
-                    <label for="apellido">apellido:</label>
-                    <input type="text" id="apellido">
-                </div>
-                <div>
-                    <label for="mail">correo electrónico:</label>
-                    <input type="email" name="" id="mail">
-                </div>
-                <div>
-                    <label for="nombre">usuario:</label>
-                    <input type="text" id="usuario">
-                </div>
-                <div>
-                    <label for="password">contraseña:</label>
-                    <input type="password" name="" id="password">
-                </div>
-                <div>
+        <div class="contenedorlogin">     
+            <section class="contactoform">
+              <h2>registrate bb!</h2>
+              <form action="">
+                <label for="nombre">nombre:</label>
+                <input type="text" id="nombre">
+
+                <label for="apellido">apellido:</label>
+                <input type="text" id="apellido">
+
+                <label for="correoelectronico">correo electronico:</label>
+                <input type="text" id="correoelectronico">
+
                 <label for="nacimiento">fecha de nacimiento:</label>
                 <input type="date" id="nacimiento">
-                </div>
-                <input type="submit" value="¡enviar!" class="boton">
-            </form>
-        </section>
-    </main>
+
+                <label for="usuario">usuario:</label>
+                <input type="text" id="usuario">
+          
+                <label for="password">contraseña:</label>
+                <input type="password" id="password">
+          
+                <a href="registro.html" class="boton">registrate amorrr!</a>
+              </form>
+            </section>
+          </div>
+</main>
     <footer>
         <div class="footer-container">
             <p class="footer-msj">✮⋆˙ otra mano | dale otra oportunidad a tu ropa ✮⋆˙</p>

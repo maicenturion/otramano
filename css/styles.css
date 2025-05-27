@@ -1,5 +1,5 @@
 @charset "UTF-8";
-header nav, .looks .looksdetalle, .localdiv, main .productos {
+header nav, .localdiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,6 +101,36 @@ main .contenedorlogin .contactoform form .boton:hover:hover {
   background-color: pink;
   color: white;
 }
+main .aclaraciones-cont {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 55px auto;
+  padding: 20px 15px;
+  text-align: center;
+}
+main .aclaraciones-cont .aclaracion {
+  flex: 1;
+  padding: 0 20px;
+  border-right: 1px solid #f8175e;
+}
+main .aclaraciones-cont .aclaracion:last-child {
+  border-right: none;
+}
+main .aclaraciones-cont .aclaracion img {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+main .aclaraciones-cont .aclaracion p {
+  font-size: 12px;
+  color: #f8175e;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
 main .estilos {
   gap: 2rem;
   flex-direction: row;
@@ -164,11 +194,13 @@ main .serparte ol li .tip {
   text-decoration: italic;
 }
 main .productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
   margin-top: 25px;
-  width: 80%;
-  padding-left: 0px;
-  padding-right: 0px;
+  gap: 30px;
+  padding: 0;
+  align-items: stretch;
 }
 main .productos img {
   height: 200px;
@@ -231,7 +263,8 @@ main .preguntasfrecuentes .rta {
   font-size: 0.85rem;
 }
 main .preguntasfrecuentes .explic {
-  color: pink;
+  background-color: #ff9283;
+  color: #ff134b;
   font-size: 1.1rem;
   text-decoration: underline;
   font-weight: bold;
@@ -247,35 +280,46 @@ main .preguntasfrecuentes .explic {
 }
 
 .looks {
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
+  padding: 2rem;
+  text-align: center;
 }
 .looks h3 {
-  font-size: 15px;
-  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 .looks .looksdetalle {
-  gap: 100px;
-  text-align: center;
-  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  font-family: "Inconsolata", monospace;
 }
-.looks .looksdetalle img {
-  height: 450px;
-  width: 250px;
-  max-width: 100%;
-  border-radius: 20px;
-  padding: 5px;
+.looks .looksdetalle div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.looks .looksdetalle div img {
+  height: 80%;
+  width: 80%;
   object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
-.looks .looksdetalle img:hover {
+.looks .looksdetalle div img:hover {
   transform: scale(1.05);
 }
-.looks .looksdetalle .tarjetalink {
-  text-decoration: underline;
-  font-size: 1.5rem;
+.looks .looksdetalle div p {
+  margin-top: 0.5rem;
+}
+.looks .looksdetalle div p .tarjetalink {
   color: black;
+  text-decoration: underline;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .pquienes {
@@ -471,20 +515,6 @@ main .preguntasfrecuentes .explic {
   .contactoform main .contenedorlogin .contactoform {
     width: 100%;
   }
-  .contactoform main .productos {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 0;
-  }
-  .contactoform main .productos img {
-    height: 50%;
-    width: 50%;
-  }
-  .contactoform main .localdiv img {
-    height: 90%;
-    width: 90%;
-  }
   .contactoform main .looks {
     display: flex;
     flex-direction: column;
@@ -547,7 +577,7 @@ main .preguntasfrecuentes .explic {
   padding: 15px;
 }
 
-header nav, main .productos, .localdiv, .looks .looksdetalle {
+header nav, .localdiv {
   display: flex;
   justify-content: center;
   align-items: center;

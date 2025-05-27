@@ -90,6 +90,41 @@ main{
               }
             }
           }
+.aclaraciones-cont {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 55px auto;
+  padding: 20px 15px;
+  text-align: center;
+
+  .aclaracion {
+    flex: 1;
+    padding: 0 20px;
+    border-right: 1px solid #f8175e;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    img {
+      @include medidas(30px, 30px); // asegurate de tener este mixin
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 12px;
+      color: #f8175e;
+      margin: 0;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+    }
+  }
+}
+
+  
     .estilos{
         gap: 2rem;
         flex-direction: row;
@@ -151,12 +186,13 @@ main{
                     }
             }
             .productos {
-                @extend %flexd;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 text-align: center;
                 margin-top: 25px;
-                width: 80%;
-                padding-left: 0px;
-                padding-right: 0px;
+                gap: 30px;
+                padding: 0;
+                align-items: stretch;
               
                 img {
                     @include medidas(200px, 200px);
@@ -214,7 +250,8 @@ main{
                         font-size: 0.85rem;
                 }
                     .explic{
-                        @include textosvs($colorfondoh2, 1.1rem, underline);
+                      background-color: #ff9283;
+                        @include textosvs(#ff134b, 1.1rem, underline);
                         font-weight: bold;
                     }
             }
@@ -228,37 +265,55 @@ main{
                         }
                 }
     
-    .looks{ 
-        gap: 50px;
-        align-items: center;
-        justify-content: center; 
-        margin-top: 15px;
-            h3{
-                font-size: 15px;
-                text-align: center
-            }
-            .looksdetalle{
-                @extend %flexd;
-                gap: 100px;
-                text-align: center; 
-                margin-top: 15px;
-                    img{
-                        @include medidas(450px, 250px);
-                        max-width: 100%;
-                        border-radius: 20px;
-                        padding: 5px;
-                        object-fit: cover;
-                            &:hover{
-                                transform: scale(1.05);
-                                }
-                            }
-                            .tarjetalink{
-                                text-decoration: underline;
-                                font-size: 1.5rem;
-                                color: $colortxbs;
-                            }
-                    }
-            }
+.looks {
+  padding: 2rem;
+  text-align: center;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .looksdetalle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    font-family: 'Inconsolata', monospace;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        @include medidas(80%, 80%);
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      p {
+        margin-top: 0.5rem;
+
+        .tarjetalink {
+          color: black;
+          text-decoration: underline;
+          font-size: 1rem;
+          display: inline-block;
+          margin-top: 0.5rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
     .pquienes {
         @extend %flexm;
         flex-wrap: wrap;
@@ -460,22 +515,7 @@ main{
       }
     }
 
-    .productos {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      padding-left: 0;
- 
-      img {
-        @include medidas(50%, 50%);
-      }
-    }
 
-    .localdiv {
-      img {
-        @include medidas(90%, 90%);
-      }
-    }
 
     .looks {
       display: flex;

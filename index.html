@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio de venta de ropa de segunda mano, buena, bonita y barata">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,9 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                    <a  href="./pages/productos.html" class="nav-link active" href="#">productos</a>
+                    </li>
+                    <li class="nav-item">
                     <a  href="./pages/nuestrahistoria.html" class="nav-link active" href="#">nuestra historia</a>
                     </li>
                     <li class="nav-item">
@@ -40,7 +44,7 @@
                     </li>
                 </ul> 
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2 estilobtn" type="search" placeholder="que estás buscando?" aria-label="buscar">
+                  <input class="form-control me-2 estilobtn" type="search" placeholder="qué buscas?" aria-label="buscar">
                   <button class="btn estilobtn2" type="submit">buscar!</button>
                 </form>
             </div>
@@ -49,8 +53,26 @@
         <p class="ptitulo">dale otra oportunidad a tu ropa</p>
     </header>
     <main>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="/assets/img/estilos1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="/assets/img/estilos2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
         <section>
-            <h2>nuestros productos</h2>
+            <h2>nuestros productos fav ✨</h2>
             <div class="productos">
                 <div class="tarjetaprod">
                     <div class="card">
@@ -87,17 +109,6 @@
                 </div>
                 <div class="tarjetaprod">
                     <div class="card">
-                        <img src="./assets/img/sweaterremera.jpg" class="tarjetaimg" alt="remera estilo sweter con cuello tipo bote color cremas">
-                        <div class="card-body">
-                            <h5 class="tarjetacuerpo">sweater hilo</h5>
-                            <p>$6.500
-                            <p>vendido por: <span class="tarjetalink">nerea rodriguez</span></p>
-                            <a href="#" class="btn btn-primary">agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaprod">
-                    <div class="card">
                         <img src="./assets/img/vestido.jpg" class="tarjetaimg" alt="vestido negro con tiritas para atar">
                         <div class="card-body">
                             <h5 class="tarjetacuerpo">vestido</h5>
@@ -109,8 +120,6 @@
                 </div>
             </div>
         </section>
-
-
         <h2>razones por las cuales tenes que ser parte de este cambio</h2>
         <section class="principal">
             <div class="comunidad" data-aos="fade-up-right">
@@ -133,6 +142,28 @@
             </ol>
             </div>
         </section>
+        
+        <div class="aclaraciones-cont">
+            <div class="aclaraciones">
+                <div class="aclaracion">
+                    <img src="./assets/img/entrega-urgente.png" alt="icono de entrega">
+                    <p>envíos a todo el pais</p>
+                </div>
+            </div>
+            <div class="aclaraciones">
+                <div class="aclaracion">
+                    <img src="./assets/img/telefono.png" alt="icono de whatsapp">
+                    <p>contactate por cualquier duda 1122334455</p>
+                </div>
+            </div>
+                <div class="aclaraciones">
+                <div class="aclaracion">
+                    <img src="./assets/img/candado.png" alt="candado seguridad">
+                    <p>compra con tranquilidad. tus datos estan protegidos</p>
+                </div>
+            </div>
+        </div>
+
         <div class="localdiv">
             <img class="local" src="./assets/img/local.jpg" alt="imagen de un perchero con muchas prendas">
         </div>
@@ -160,7 +191,7 @@
                 </div>
             </div>
         </section>
-        <h2>_</h2>
+
     </main>
     <section class="section-newsletter-home position-relative" data-store="home-newsletter">
         <div class="container-fluidnewsletter">
