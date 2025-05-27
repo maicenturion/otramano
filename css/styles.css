@@ -88,7 +88,7 @@ main .contenedorlogin .contactoform form .boton {
   font-size: 1rem;
   text-decoration: none;
   margin-top: 10px;
-  background-color: rgb(236, 234, 234);
+  background-color: pink;
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -232,7 +232,7 @@ main p {
   margin-top: 0px;
 }
 main .btn-primary {
-  background-color: white;
+  background-color: pink;
   color: black;
   border-color: black;
 }
@@ -366,7 +366,7 @@ main .preguntasfrecuentes .explic {
 }
 
 .btn-primary {
-  background-color: white;
+  background-color: pink;
   color: black;
   border-color: black;
   margin-top: 10px;
@@ -464,7 +464,7 @@ main .preguntasfrecuentes .explic {
   color: white;
   font-size: 1rem;
   text-decoration: none;
-  background-color: rgb(236, 234, 234);
+  background-color: pink;
   border: 2px solid rgb(236, 234, 234);
   border-radius: 10px;
   padding: 10px 20px;
@@ -660,7 +660,7 @@ header nav form .estilobtn2 {
   color: white;
   font-size: 1rem;
   text-decoration: none;
-  background-color: rgb(236, 234, 234);
+  background-color: pink;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -738,7 +738,7 @@ header .anuncio {
     color: white;
     font-size: 0.9rem;
     text-decoration: none;
-    background-color: rgb(236, 234, 234);
+    background-color: pink;
     border: none;
     padding: 4px 8px;
     border-radius: 5px;

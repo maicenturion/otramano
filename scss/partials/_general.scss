@@ -72,9 +72,9 @@ main{
                   width: 100%;
                 }
                 .boton {
-                @include textosvs($colorfondo, 1rem,none);
+                @include textosvs($colortxbs, 1rem,none);
                   margin-top: 10px;
-                  background-color: $colorptitulo;
+                  background-color: pink;
                   border: none;
                   border-radius: 10px;
                   padding: 10px;
@@ -453,8 +453,8 @@ main{
                         }
 
             .boton {
-                @include textosvs($colorfondo, 1rem, none);
-                background-color: $colorbordes;
+                @include textosvs($colortxbs, 1rem, none);
+                background-color: $colorfondoh2;
                 border: 2px solid $colorbordes;
                 border-radius: 10px;
                 padding: 10px 20px;

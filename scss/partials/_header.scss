@@ -24,7 +24,7 @@ header{
                       font-size: 1rem !important; 
                     }
                     .estilobtn2 {
-                        @include textosvs ($colorfondo, 1rem, none);
+                        @include textosvs ($colortxbs, 1rem, none);
                         background-color: $colorbordes;
                         border: none;
                         padding: 5px 10px;
@@ -103,7 +103,7 @@ header{
         }
 
         .estilobtn2 {
-          @include textosvs($colorfondo, 0.9rem, none);
+          @include textosvs($colortxbs, 0.9rem, none);
           background-color: $colorbordes;
           border: none;
           padding: 4px 8px; // más compacto
